@@ -1,0 +1,148 @@
+\hypertarget{class_g_p_a_calculator}{}\section{G\+P\+A\+Calculator Class Reference}
+\label{class_g_p_a_calculator}\index{G\+P\+A\+Calculator@{G\+P\+A\+Calculator}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_g_p_a_calculator_aa9b9dbb521f84cb1a5f48a89f11b453b}{G\+P\+A\+Calculator}} (int num\+Classes, std\+::string from\+File=\char`\"{}\char`\"{})
+\begin{DoxyCompactList}\small\item\em initializes a \mbox{\hyperlink{class_g_p_a_calculator}{G\+P\+A\+Calculator}} object, automatically stores grade data based on second parameter \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_g_p_a_calculator_a225157e7c4783271b58ebeb7572c0796}{calculate\+Semester\+G\+PA}} ()
+\begin{DoxyCompactList}\small\item\em calculates semester(unweighted G\+P\+A) from grade data \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_g_p_a_calculator_a8657e3921e17081722511a9be4175a24}{calculate\+Weighted\+G\+PA}} ()
+\begin{DoxyCompactList}\small\item\em calculates weighted G\+PA from grade data \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_g_p_a_calculator_acadc3a8b84d397760ba90706f4eda0ba}{print\+Classes}} ()
+\begin{DoxyCompactList}\small\item\em prints class data to console(name, grade, credits) \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_g_p_a_calculator_a8d6b09c94e927a1aec8aa52b8d1cd171}{get\+Class\+Data\+From\+File}} (std\+::string filename)
+\begin{DoxyCompactList}\small\item\em reads and stores grade data \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_g_p_a_calculator_a5f41df7247996cb6244548634ad4674c}{get\+Class\+Data}} ()
+\begin{DoxyCompactList}\small\item\em prompts user to enter grade data manually and stores it \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_g_p_a_calculator_aab6e4bedfe1131f9a5d3984ca03720c1}{grade\+Point\+Equivalent\+Resolver}} (std\+::string letter\+Check)
+\begin{DoxyCompactList}\small\item\em resolves floating point gradepointequivalent from letter grade \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_g_p_a_calculator_a234f561371f3d2518dd4901e73659017}\label{class_g_p_a_calculator_a234f561371f3d2518dd4901e73659017}} 
+int {\bfseries numberof\+Classes}
+\item 
+\mbox{\Hypertarget{class_g_p_a_calculator_a756737bab0686aa274db1c7b08a6b0cf}\label{class_g_p_a_calculator_a756737bab0686aa274db1c7b08a6b0cf}} 
+\mbox{\hyperlink{class_g_p_a_class}{G\+P\+A\+Class}} {\bfseries classes} \mbox{[}8\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_g_p_a_calculator_aa9b9dbb521f84cb1a5f48a89f11b453b}\label{class_g_p_a_calculator_aa9b9dbb521f84cb1a5f48a89f11b453b}} 
+\index{G\+P\+A\+Calculator@{G\+P\+A\+Calculator}!G\+P\+A\+Calculator@{G\+P\+A\+Calculator}}
+\index{G\+P\+A\+Calculator@{G\+P\+A\+Calculator}!G\+P\+A\+Calculator@{G\+P\+A\+Calculator}}
+\subsubsection{\texorpdfstring{G\+P\+A\+Calculator()}{GPACalculator()}}
+{\footnotesize\ttfamily G\+P\+A\+Calculator\+::\+G\+P\+A\+Calculator (\begin{DoxyParamCaption}\item[{int}]{num\+Classes,  }\item[{std\+::string}]{from\+File = {\ttfamily \char`\"{}\char`\"{}} }\end{DoxyParamCaption})}
+
+
+
+initializes a \mbox{\hyperlink{class_g_p_a_calculator}{G\+P\+A\+Calculator}} object, automatically stores grade data based on second parameter 
+
+
+\begin{DoxyParams}{Parameters}
+{\em num\+Classes} & The number of class periods to calculate G\+PA for \\
+\hline
+{\em from\+File} & (optional) File name to read grade data from \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+None 
+\end{DoxyReturn}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_g_p_a_calculator_a225157e7c4783271b58ebeb7572c0796}\label{class_g_p_a_calculator_a225157e7c4783271b58ebeb7572c0796}} 
+\index{G\+P\+A\+Calculator@{G\+P\+A\+Calculator}!calculate\+Semester\+G\+PA@{calculate\+Semester\+G\+PA}}
+\index{calculate\+Semester\+G\+PA@{calculate\+Semester\+G\+PA}!G\+P\+A\+Calculator@{G\+P\+A\+Calculator}}
+\subsubsection{\texorpdfstring{calculate\+Semester\+G\+P\+A()}{calculateSemesterGPA()}}
+{\footnotesize\ttfamily float G\+P\+A\+Calculator\+::calculate\+Semester\+G\+PA (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+calculates semester(unweighted G\+P\+A) from grade data 
+
+\begin{DoxyReturn}{Returns}
+calculated unweighted G\+PA. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_g_p_a_calculator_a8657e3921e17081722511a9be4175a24}\label{class_g_p_a_calculator_a8657e3921e17081722511a9be4175a24}} 
+\index{G\+P\+A\+Calculator@{G\+P\+A\+Calculator}!calculate\+Weighted\+G\+PA@{calculate\+Weighted\+G\+PA}}
+\index{calculate\+Weighted\+G\+PA@{calculate\+Weighted\+G\+PA}!G\+P\+A\+Calculator@{G\+P\+A\+Calculator}}
+\subsubsection{\texorpdfstring{calculate\+Weighted\+G\+P\+A()}{calculateWeightedGPA()}}
+{\footnotesize\ttfamily float G\+P\+A\+Calculator\+::calculate\+Weighted\+G\+PA (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+calculates weighted G\+PA from grade data 
+
+\begin{DoxyReturn}{Returns}
+calculated weighted G\+PA 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_g_p_a_calculator_a5f41df7247996cb6244548634ad4674c}\label{class_g_p_a_calculator_a5f41df7247996cb6244548634ad4674c}} 
+\index{G\+P\+A\+Calculator@{G\+P\+A\+Calculator}!get\+Class\+Data@{get\+Class\+Data}}
+\index{get\+Class\+Data@{get\+Class\+Data}!G\+P\+A\+Calculator@{G\+P\+A\+Calculator}}
+\subsubsection{\texorpdfstring{get\+Class\+Data()}{getClassData()}}
+{\footnotesize\ttfamily void G\+P\+A\+Calculator\+::get\+Class\+Data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+prompts user to enter grade data manually and stores it 
+
+\begin{DoxyReturn}{Returns}
+None 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_g_p_a_calculator_a8d6b09c94e927a1aec8aa52b8d1cd171}\label{class_g_p_a_calculator_a8d6b09c94e927a1aec8aa52b8d1cd171}} 
+\index{G\+P\+A\+Calculator@{G\+P\+A\+Calculator}!get\+Class\+Data\+From\+File@{get\+Class\+Data\+From\+File}}
+\index{get\+Class\+Data\+From\+File@{get\+Class\+Data\+From\+File}!G\+P\+A\+Calculator@{G\+P\+A\+Calculator}}
+\subsubsection{\texorpdfstring{get\+Class\+Data\+From\+File()}{getClassDataFromFile()}}
+{\footnotesize\ttfamily void G\+P\+A\+Calculator\+::get\+Class\+Data\+From\+File (\begin{DoxyParamCaption}\item[{std\+::string}]{filename }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+reads and stores grade data 
+
+
+\begin{DoxyParams}{Parameters}
+{\em filename} & File to read grade data from \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+None 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_g_p_a_calculator_aab6e4bedfe1131f9a5d3984ca03720c1}\label{class_g_p_a_calculator_aab6e4bedfe1131f9a5d3984ca03720c1}} 
+\index{G\+P\+A\+Calculator@{G\+P\+A\+Calculator}!grade\+Point\+Equivalent\+Resolver@{grade\+Point\+Equivalent\+Resolver}}
+\index{grade\+Point\+Equivalent\+Resolver@{grade\+Point\+Equivalent\+Resolver}!G\+P\+A\+Calculator@{G\+P\+A\+Calculator}}
+\subsubsection{\texorpdfstring{grade\+Point\+Equivalent\+Resolver()}{gradePointEquivalentResolver()}}
+{\footnotesize\ttfamily float G\+P\+A\+Calculator\+::grade\+Point\+Equivalent\+Resolver (\begin{DoxyParamCaption}\item[{std\+::string}]{letter\+Check }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+resolves floating point gradepointequivalent from letter grade 
+
+
+\begin{DoxyParams}{Parameters}
+{\em letter\+Check} & letter grade to check \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+grade point equivalent 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_g_p_a_calculator_acadc3a8b84d397760ba90706f4eda0ba}\label{class_g_p_a_calculator_acadc3a8b84d397760ba90706f4eda0ba}} 
+\index{G\+P\+A\+Calculator@{G\+P\+A\+Calculator}!print\+Classes@{print\+Classes}}
+\index{print\+Classes@{print\+Classes}!G\+P\+A\+Calculator@{G\+P\+A\+Calculator}}
+\subsubsection{\texorpdfstring{print\+Classes()}{printClasses()}}
+{\footnotesize\ttfamily void G\+P\+A\+Calculator\+::print\+Classes (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+prints class data to console(name, grade, credits) 
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+G\+P\+A\+Calculator.\+h\item 
+G\+P\+A\+Calculator.\+cpp\end{DoxyCompactItemize}

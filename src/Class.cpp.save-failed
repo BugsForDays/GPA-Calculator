@@ -1,0 +1,11 @@
+#include "Class.h"
+#include <string>
+
+using namespace std;
+
+GPAClass::GPAClass(std::string name, std::string grade, float creds)
+{
+    className = name;
+    letterGrade = grade;
+    credits = creds;
+}

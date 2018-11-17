@@ -1,2 +1,2 @@
-# GPA-Calculator
+# GPA Calculator
 calculate GPA w/ c++

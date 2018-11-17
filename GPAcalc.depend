@@ -1,0 +1,23 @@
+# depslib dependency file v1.0
+1542423369 source:c:\users\philip\desktop\code\gpacalc\src\gpacalculator.cpp
+	"GPACalculator.h"
+
+1542422510 c:\users\philip\desktop\code\gpacalc\include\gpacalculator.h
+	"Class.h"
+	<iostream>
+	<fstream>
+	<string>
+	<iomanip>
+
+1540869770 source:c:\users\philip\desktop\code\gpacalc\src\class.cpp
+	"Class.h"
+	<string>
+
+1540870894 c:\users\philip\desktop\code\gpacalc\include\class.h
+	<string>
+
+1542422847 source:c:\users\philip\desktop\code\gpacalc\main.cpp
+	<iostream>
+	"Class.h"
+	"GPACalculator.h"
+
